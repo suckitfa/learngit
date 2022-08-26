@@ -1,0 +1,1 @@
+command line: git add can track file change.
