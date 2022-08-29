@@ -13,3 +13,5 @@ Git is a free software distributed under the
 ### HEAD指针表示当前版本
 - `git reset --hard commit_id` 可以切换历史版本的代码
 -`git reflog`记录了每一次的命令
+
+### 暂存区 stage 的概念
