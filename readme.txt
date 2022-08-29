@@ -8,3 +8,6 @@ Git is a free software distributed under the
 
 - `git status` 随时展示当前工作区的状态
 - `git diff`查看文件修改内容
+
+
+### HEAD指针表示当前版本
