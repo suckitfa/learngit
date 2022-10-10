@@ -15,7 +15,7 @@ Git is a free software distributed under the
 - `git reset --hard commit_id` 可以切换历史版本的代码
 -`git reflog`记录了每一次的命令
 
-### 暂存区 stage 的概念
+### 工作区(work space)和版本库，以及版本库（repository）中的暂存区 stage 的概念
 - 第一步是用git add把文件添加进去，实际上就是把文件修改添加到暂存区；
 
 - 第二步是用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支。
@@ -31,6 +31,6 @@ Git is a free software distributed under the
 
 #### git checkout -- <file_name> 和 git reset HEAD的场景
 
-- 场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令git checkout -- file。
+- 场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令git checkout -- file。版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。
 - 场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD <file>，就回到了场景1，第二步按场景1操作。
 - 场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库。
