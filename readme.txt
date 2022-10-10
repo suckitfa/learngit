@@ -21,8 +21,10 @@ Git is a free software distributed under the
 - 第二步是用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支。
 
 ### git的优点
-- 保存文件的修改
+- 保存文件的修改, 所以在这里git提交的数据都是某个文件的修改！！！
 
 ### 常用命令
-- `git add <file_name> `将文件中的修改放到暂存区stage里面
-- `git commit -m "some message"` 
+- `git add <file_name> `将文件中工作区（work space）的修改放到暂存区stage里面
+- `git commit -m "some message"` 提交到版本库 repository
+- `git checkout -- <file_name>` 丢去文件中工作区的修改: 就是让这个文件回到最近一次git commit或git add时的状态。
+- `git reset HEAD <file>` 将暂存区的(unstage)撤销掉,重新放回工作区
