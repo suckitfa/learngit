@@ -19,3 +19,10 @@ Git is a free software distributed under the
 - 第一步是用git add把文件添加进去，实际上就是把文件修改添加到暂存区；
 
 - 第二步是用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支。
+
+### git的优点
+- 保存文件的修改
+
+### 常用命令
+- `git add <file_name> `将文件中的修改放到暂存区stage里面
+- `git commit -m "some message"` 
