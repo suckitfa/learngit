@@ -1,3 +1,4 @@
+# Git intro note
 Git is a version control system.
 Git is free software.
 Git is a free software distributed under the
@@ -15,3 +16,6 @@ Git is a free software distributed under the
 -`git reflog`记录了每一次的命令
 
 ### 暂存区 stage 的概念
+- 第一步是用git add把文件添加进去，实际上就是把文件修改添加到暂存区；
+
+- 第二步是用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支。
