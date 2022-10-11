@@ -61,8 +61,18 @@ git remote rm origin
 ```ssh
 # 查看git分支
 git branch
-# 切换分支
-git checkout <branch_name>
+# 创建分支
+git branch <branch_name>
+# 切换分支 两个命令
+git checkout <branch_name> 
+# - 注意区分 git checkout -- <file_name>
+git switch -c <branch_name>
+
+# 分支合并
+git merge <branch_name>
+
+# 删除分支 
+git branch -d <branch_name>
 ```
 ### 如何自己搭建内部的git服务器
 - 另一个办法是自己动手，搭一个Git服务器，因为是你自己的Git服务器，所以别人也是看不见的。这个方法我们后面会讲到的，相当简单，公司内部开发必备。
