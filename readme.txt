@@ -37,7 +37,23 @@ Git is a free software distributed under the
 
 ### 远程仓库的配置
 ```sh
+# 输入下面命令生成秘钥
 ssh-keygen -t rsa -C "254202042@qq.com"
+# 将生成的秘钥加入github页面
 ```
+
+### 远程仓库增加，第一次提交，与删除
+```sh
+git remote add origin <git_repo_url>
+git remote add origin git@server-name:path/repo-name.git
+
+# 第一次推送master分支的所有内容
+git push -u origin master 
+
+# 删除本地仓库和远程仓库的关系
+git remote rm origin
+删除”其实是解除了本地和远程的绑定关系，并不是物理上删除了远程库。远程库本身并没有任何改动。要真正删除远程库，需要登录到GitHub，在后台页面找到删除按钮再删除。
+```
+
 ### 如何自己搭建内部的git服务器
 - 另一个办法是自己动手，搭一个Git服务器，因为是你自己的Git服务器，所以别人也是看不见的。这个方法我们后面会讲到的，相当简单，公司内部开发必备。
