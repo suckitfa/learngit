@@ -78,3 +78,21 @@ git branch -d <branch_name>
 测试分支feature1
 ### 如何自己搭建内部的git服务器
 - 另一个办法是自己动手，搭一个Git服务器，因为是你自己的Git服务器，所以别人也是看不见的。这个方法我们后面会讲到的，相当简单，公司内部开发必备。
+
+### 标签管理
+```sh
+# 创建新的标签号
+git tag <tag_name>
+git tag -a <tag_name> -m "标签信息"
+
+# 删除标签
+git tag -d <tag_name>
+
+# 推送到远程
+git push origin <tag_name>
+
+# 删除远程的标签
+git tag -d <tag_name>
+git push origin :refs/tags/<tag_name>
+
+```
