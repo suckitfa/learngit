@@ -70,7 +70,7 @@ git switch -c <branch_name>
 
 # 分支合并
 git merge <branch_name>
-
+合并指定分支到当前分支
 # 删除分支 
 git branch -d <branch_name>
 ```
