@@ -83,11 +83,9 @@ git branch -d <branch_name>
 ### 如何自己搭建内部的git服务器
 - 另一个办法是自己动手，搭一个Git服务器，因为是你自己的Git服务器，所以别人也是看不见的。这个方法我们后面会讲到的，相当简单，公司内部开发必备。
 
-<<<<<<< HEAD
 ### 分支管理
 - master分支应该是稳定的，仅用来发布新的版本，平时不能够在上面干活
 - dev 是开发分支
-=======
 ### 标签管理
 ```sh
 # 创建新的标签号
@@ -105,4 +103,3 @@ git tag -d <tag_name>
 git push origin :refs/tags/<tag_name>
 
 ```
->>>>>>> origin/dev
